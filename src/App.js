@@ -8,7 +8,6 @@ import EnquiryList from "./Components/EnquiryList";
 function App() {
   return (
     <>
-    <BrowserRouter>
       <Routes>
         <Route path="/courseslist" element={<CoursesList/>}/>
         <Route path="/enquirydetails/:id" element={<EnquiryDetails/>}/>
@@ -16,9 +15,6 @@ function App() {
 
         <Route path="*" element={<Navigate to="/courses" replace/>}/>
       </Routes>
-    
-
-    </BrowserRouter>
     </>
     
   );
